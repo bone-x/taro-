@@ -1,0 +1,90 @@
+.flex {
+    display: flex;
+    .flex-col {
+      flex-flow: column;
+    }
+  }
+  .pageContainer {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    .nav {
+      overflow: hidden;
+      flex: 1;
+    }
+  }
+
+  .at-tabs--WEAPP {
+    height: 100%;
+    .at-tabs__header {
+      flex: 1;
+      max-height: 35px;
+    }
+    .at-tabs__body {
+      flex: 1;
+    }
+  }
+
+  .video{
+    display: flex;
+    height: 421px;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+  }
+
+.practise {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background: #fff;
+  .head {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0 36px;
+    line-height: 90px;
+    border-bottom: 1px solid #EBEFF2;
+    .at-icon {
+      font-size: 53px;
+      color: #A3ABB8;
+    }
+    .title {
+      flex: 1;
+      overflow: hidden;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      text-align: center;
+      padding: 0 10px;
+    }
+    .total {
+      color: #A2ACB6;
+    }
+  }
+  .content {
+    flex: 1;
+    overflow: hidden;
+    padding-top: 15px;
+  }
+  .foot {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    border-top: 1px solid #EBEFF2;
+    text {
+      flex: 1;
+      font-size: 32px;
+      text-align: center;
+      font-weight: bold;
+      color: #fff;
+      background: #13C799;
+      &:first-child {
+        color: #A3ABB8;
+        background: #F7F9FB;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@import '../../app.scss';
+.register {
+    padding: 0 73px;
+    min-height: 100vh;
+    background: #fff;
+    .avtive {
+        background:$theme !important;
+        // color: #fff !important;
+        color: #333333 !important;
+        font-weight: 500;
+    }
+    .taro_img {
+        width: 160px;
+        height: 60px;
+        display: block;
+        border-radius: 5px;
+        pointer-events: none;
+    }
+    .button_send {
+        font-size:26px;
+        color: #999;
+        width:160px;
+        height:60px;
+        line-height: 60px;
+        background:#EDEDED;
+        border-radius:30px;
+        text-align: center;     
+    }
+    .button_sure {
+        margin-top: 61px;
+        background: #EDEDED;
+        color: #999;
+        text-align: center;
+        width: 606px;
+        height: 90px;
+        line-height: 90px;
+        font-size:32px;
+        font-weight:500;
+        border-radius:48px;
+        margin-bottom: 20px;
+        border: 0px;
+        &.actived {
+            background:$theme;
+            color: #fff;
+        } 
+        &::after{
+          border: none;
+        } 
+    }
+    .contract {
+        display: flex;
+        align-items: center;
+        margin-top: 47px;
+        font-size:28px;
+        .agree {
+            color: #13C799;
+            text-decoration:underline;
+        }
+        .image{
+            width: 36px;
+            height: 36px;
+            margin-right: 31px;
+        }
+    }
+    .login{
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        bottom: 59px;
+        text-align: center;
+        font-size: 28px;
+        color: #666666;
+        .image{
+            margin-left: 16px;
+            width: 20px;
+            height: 25px;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@import '../../app.scss';
+@import "~taro-ui/dist/style/components/flex.scss";
+.input_wrap {
+    height: 120px;
+    line-height: 120px;
+    vertical-align: middle;
+    font-size: 32px;
+    border-bottom: 1px solid #EDEDED;
+    input {
+        height: 120px;
+        line-height: 120px;
+    }
+    .right_side {
+        .taro_img {
+            width: 160px;
+            height: 60px;
+            display: block;
+            border-radius: 5px;
+        }
+        .button_send {
+            font-size:26px;
+            color: #999;
+            width:160px;
+            height:60px;
+            line-height: 60px;
+            background:#EDEDED;
+            border-radius:30px;
+            text-align: center;
+            &.avtive {
+                background:$theme;
+                color: #fff;
+            }      
+        }
+    }
+}
+.button_sure {
+    margin-top: 61px;
+    background: #EDEDED;
+    color: #fff;
+    text-align: center;
+    width: 606px;
+    height: 90px;
+    line-height: 90px;
+    font-size:32px;
+    font-weight:500;
+    &.actived {
+        background:$theme;
+        color: #fff;
+    }  
+}

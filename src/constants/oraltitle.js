@@ -1,0 +1,2 @@
+export const ORALTITLE = 'ORALTITLE'
+export const CLASSTITLE = 'CLASSTITLE'

@@ -1,0 +1,135 @@
+{
+	"miniprogramRoot": "dist/",
+	"projectname": "Intensive-trainMini",
+	"description": "",
+	"appid": "wx578a17254acdbc53",
+	"appSecret": "f459fed2a5134de4967765ecf5a4817a",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"enhance": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": false,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"bundle": false
+	},
+	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"libVersion": "2.10.2",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "pages/course/course",
+					"pathName": "pages/course/course",
+					"query": "classPlanId= a7318d1d7aa4459b63f45e2d5c25677&trainId=600",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/classList/class-list",
+					"pathName": "pages/classList/class-list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "liveRoom/pages/liveHome/live-room",
+					"pathName": "liveRoom/pages/liveHome/live-room",
+					"query": "title=%E4%BB%BB%E5%8A%A1%E4%B8%80%E7%AC%AC%E4%B8%80%E8%8A%82%20%E4%BC%9A%E8%AE%A1%E6%A6%82%E8%BF%B0&videoType=1&__key_=15844950475742",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/honour/honour",
+					"pathName": "pages/honour/honour",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/classList/class-list",
+					"pathName": "pages/classList/class-list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/zipper/zipper",
+					"pathName": "pages/zipper/zipper",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "pages/studyReport/report-unfinished",
+					"pathName": "pages/studyReport/report-unfinished",
+					"query": "classPlanId= a7318d1d7aa4459b63f45e2d5c25677&trainId=600",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Test/classHomeWork/index",
+					"pathName": "pages/Test/classHomeWork/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "liveRoom/pages/liveHome/live-room",
+					"pathName": "liveRoom/pages/liveHome/live-room",
+					"query": "classPlanId= a7318d1d7aa4459b63f45e2d5c25677&trainId=600",
+					"scene": null
+				}
+			]
+		}
+	}
+}

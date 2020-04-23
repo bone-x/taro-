@@ -1,0 +1,253 @@
+.panel {
+  position: relative;
+  margin:0 30px 30px;
+  border-radius: 18px;
+  background: #fff;
+  .panel-top {
+    position: relative;
+    padding: 30px;
+    .prefix {
+      position: absolute;
+      top: 35px;
+      left: 0;
+      width: 10px;
+      height: 40px;
+      border-radius: 0 10px 10px 0;
+      background: #13C799;
+    }
+    .block {
+      display: flex;
+      .block-left {
+        flex: 1;
+        line-height: 50px;
+        font-size: 34px;
+        font-weight: bold;
+        color: #3A3C42;
+        .stageName {
+          margin-right: 30px;
+        }
+        .timeMsg {
+          margin-top: 6px;
+          font-weight: normal;
+          font-size: 24px;
+          color: #6C7179;
+        }
+      }
+      .block-right {
+        .img {
+          margin-left: 61px;
+        }
+      }
+    }
+  }
+  .panel-content {
+    overflow: hidden;
+    transition: height 500ms cubic-bezier(.47,0,.745,.715)
+  }
+}
+
+.timeline {
+  padding: 30px 36px;
+  .tl-item {
+    position: relative;
+    margin-bottom: 30px;
+    .tl-item__tail {
+      position: absolute;
+      top: -200%;
+      bottom: 50%;
+      width: 4px;
+      background: #DFE6EC;
+      z-index: 1;
+    }
+    .tl-item__icon {
+      position: absolute;
+      top: 37%;
+      left: -12px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 5px solid #DFE6EC;
+      background: #fff;
+      z-index: 11;
+    }
+    .tl-item__content {
+      padding: 30px;
+      margin-left: 28px;
+      border-radius: 12px;
+      background: #F7F9FB;
+    }
+    &:first-child {
+      .tl-item__tail {
+        height: 0;
+      }
+      .tl-item__icon {
+        top: 0;
+      }
+    }
+    &:last-child {
+      .tl-item__tail {
+        bottom: 50%;
+      }
+    }
+  }
+  .h-118 {
+    height: 118px;
+  }
+  .mainColor {
+    .tl-item__tail {
+      background: #13C799;
+      z-index: 2;
+    }
+    .tl-item__icon {
+      border-color: #13C799;
+    }
+  }
+}
+.img {
+  width: 40px;
+  height: 40px;
+  vertical-align: sub;
+}
+.box {
+  .top {
+    font-size: 30px;
+    font-weight: bold;
+    color: #3A3C42;
+    .img {
+      margin-right: 10px;
+    }
+  }
+  .course-msg {
+    margin: 10px 0 18px;
+    font-size: 24px;
+    color: #6C7179;
+    .state {
+      margin-left: 10px;
+    }
+  }
+  .video {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    .img {
+      width: 100%;
+      height: 180px;
+    }
+    .play_img{
+      width: 96px;
+      height: 96px;
+    }
+    .view {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 96px;
+      height: 96px;
+      margin: auto;
+      border-radius: 50%;
+      background: #000;
+      opacity: .7;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.con {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  .con-left {
+    flex: 1;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3A3C42;
+    .img {
+      margin-right: 7px;
+    }
+    .desc {
+      margin-top: 15px;
+      font-size: 24px;
+      font-weight: normal;
+      color: #A3ABB8;
+    }
+  }
+  .con-right {
+    width: 160px;
+    height: 66px;
+    line-height: 66px;
+    text-align: right;
+    .lock {
+      width: 40px;
+      height: 40px;
+      vertical-align:sub;
+    }
+    .opt {
+      height:66px;
+      line-height: 66px;
+      text-align: center;
+      font-size:26px;
+      font-weight: bold;
+      color: #fff;
+      border-radius: 66px;
+      border: none;
+      background: #13C799;
+    }
+    .lightColor {
+      background: #FEB219;
+    }
+  }
+}
+
+.view-report {
+  width: 360px;
+  padding: 30px 0;
+  margin: 0 auto 30px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #13C799;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 84px;
+  .img {
+    margin-right: 8px;
+  }
+}
+
+.showNote_header{
+  display: flex;
+  justify-content: space-between;
+  margin:18px 36px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #EAEEF2;
+  .title{
+    font-size:42px;
+    font-family:PingFang SC;
+    font-weight:bold;
+    line-height:58px;
+    color:rgba(58,60,66,1);
+  }
+}
+.noteList {
+  position: relative;
+  padding: 0 36px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #3A3C42;
+  .noteItem {
+    line-height: 90px;
+    .img {
+      margin-right: 24px;
+    }
+  }
+}
+.noteEmpty {
+  display: block;
+  margin: auto;
+  width: 407px;
+  height: 407px;
+}

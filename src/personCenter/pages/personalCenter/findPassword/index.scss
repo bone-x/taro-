@@ -1,0 +1,61 @@
+.findPassword {
+    padding: 0 73px 0;
+    min-height: 100vh;
+    background: #fff;
+    box-sizing: border-box;
+    .tabNav{
+      display: flex;
+      justify-content: space-between;
+      font-size: 36px;
+      font-weight: 500;
+      color: #666666;
+      padding-top: 48px;
+      text-align: center;
+      width: 100%;
+    }
+    .item{
+      text-align: center;
+      flex: 1
+    }
+    .active{
+      color: #13C799;
+    }
+    .taro_img {
+        width: 160px;
+        height: 60px;
+        display: block;
+        border-radius: 5px;
+        pointer-events: none;
+    }
+    .button_send {
+        font-size:26px;
+        color: #999;
+        width:160px;
+        height:60px;
+        line-height: 60px;
+        background:#EDEDED;
+        border-radius:30px;
+        text-align: center;
+        &.avtive {
+            background:#13C799;
+            color: #333333;
+        }      
+    }
+    .button_sure {
+        border: none;
+        margin-top: 61px;
+        background: #EDEDED;
+        color: #999999;
+        text-align: center;
+        width: 606px;
+        height: 90px;
+        line-height: 90px;
+        font-size:32px;
+        font-weight:500;
+        border-radius: 48px;
+    }
+    .actived {
+        color: #333333;
+        background-color: #13C799;
+    }
+}

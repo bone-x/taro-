@@ -1,0 +1,196 @@
+@import '../../app.less';
+
+.bindPhone {
+  // height: 100%;
+  min-height: 100vh;
+  background: #fff;
+  position: relative;
+
+  // box-sizing: border-box;
+  // display: flex;
+  // justify-content: space-between;
+  // flex-direction: column;
+  .tabBar {
+    box-sizing: border-box;
+    padding: 49px 73px 60px 73px;
+    display: flex;
+    text-align: center;
+    font-size: 36px;
+    color: #666666;
+    align-items: center;
+    font-weight: 500;
+
+    .logBtn {
+      flex: 1;
+    }
+
+    .regBtn {
+      flex: 1;
+    }
+
+    .checked {
+      color: #13C799;
+    }
+  }
+
+  .bindBox {
+    box-sizing: border-box;
+    padding: 0 73px;
+  }
+
+  .tabList {
+    display: flex;
+    padding-top: 49px;
+    padding-bottom: 31px;
+    font-size: 36px;
+    font-weight: 500;
+    color: #666;
+
+    View {
+      flex: 1;
+      text-align: center
+    }
+
+    .tabActive {
+      color: #13C799
+    }
+  }
+
+  .avtive {
+    background: @theme  !important;
+    // color     : #fff !important;
+    color: #333333 !important;
+  }
+
+  .taro_img {
+    width: 160px;
+    height: 60px;
+    display: block;
+    border-radius: 5px;
+  }
+
+  .button_send {
+    font-size: 26px;
+    color: #999;
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    background: #EDEDED;
+    border-radius: 30px;
+    text-align: center;
+  }
+
+  .button_sure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 61px;
+    background: #EDEDED;
+    // color: #fff;
+    color: #999;
+    text-align: center;
+    // width: 606px;
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-radius: 48px;
+
+    &::after {
+      border: none;
+    }
+  }
+
+  .contract {
+    margin-top: 47px;
+    text-align: center;
+    font-size: 28px;
+
+    .agree {
+      color: #FF5A1F;
+    }
+  }
+
+  .subscript {
+    color: #666;
+    font-size: 26px;
+
+    &.rightSide {
+      float: right;
+    }
+
+    &.leftSide {
+      float: left;
+    }
+  }
+
+  .bottomBox {
+    bottom: 61px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+
+    .weixin {
+      margin-top: 21px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      .weixinImage {
+        width: 200px;
+        position: relative;
+        margin-left: 25px;
+
+        Image {
+          position: absolute;
+          z-index: 10000;
+          left: 0px;
+          top: 24%;
+          width: 52px;
+          height: 43px;
+        }
+      }
+
+      .weiTxt {
+        &::after {
+          border: none
+        }
+      }
+
+      Button {
+        background-color: #fff;
+        width: 100%;
+        font-size: 32px;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        color: #575859;
+      }
+    }
+
+    .txt {
+      color: #A7AAB8;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 32px;
+
+      .lf {
+        width: 60px;
+        height: 1px;
+        border-bottom: 1px solid #EDEDED;
+        margin-top: 14px;
+        margin-right: 10px;
+      }
+
+      .rf {
+        width: 60px;
+        height: 1px;
+        border-bottom: 1px solid #EDEDED;
+        margin-top: 14px;
+        margin-left: 10px;
+      }
+    }
+  }
+}

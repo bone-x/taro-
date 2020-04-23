@@ -1,0 +1,121 @@
+.header {
+  font-size: 28px;
+  height: 102px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(58, 60, 66, 1);
+  padding: 17px 0 17px 36px;
+  border-bottom: 1px solid rgba(235, 239, 242, 1);
+  //   position: fixed;
+  width: 100%;
+  //   z-index: 9999;
+  //   left: 0;
+  //   top: 0;
+  box-sizing: border-box;
+  background: #fff;
+}
+.body {
+  margin-top: 102px;
+  font-size: 32px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  .score {
+    text-align: center;
+    margin-top: -110px;
+    .line {
+      width: 130px;
+      height: 2px;
+      border-bottom: 1px solid #eaeef2;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+  .txt {
+    text-align: center;
+    margin-top: 80px;
+  }
+}
+.card {
+  padding-bottom: 92px;
+  .head {
+    margin-bottom: 70px;
+    padding: 0 35px;
+    display: flex;
+
+    .name {
+      width: 30%;
+      font-size: 32px;
+      font-family: PingFang SC;
+      font-weight: bold;
+      color: rgba(108, 113, 121, 1);
+    }
+    .list {
+      width: 70%;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 26px;
+      font-family: PingFang SC;
+      font-weight: 400;
+      color: rgba(58, 60, 66, 1);
+      .question {
+        flex: 1;
+        text-align: right;
+      }
+      .icon {
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        margin-right: 7px;
+      }
+      .right {
+        background: rgba(19, 199, 153, 1);
+      }
+      .wrong {
+        background: rgba(255, 90, 88, 1);
+      }
+      .not {
+        border: 1px solid rgba(168, 175, 187, 1);
+      }
+    }
+  }
+  .cardList {
+    margin: 0 36px;
+    display: flex;
+    flex-wrap: wrap;
+    .list {
+      width: 16.66666%;
+      margin-bottom: 28px;
+    }
+  }
+}
+.heightLine {
+  width: 750px;
+  height: 25px;
+  background: rgba(250, 251, 253, 1);
+  margin: 50px 0;
+}
+.foot {
+  display: flex;
+  height: 96px;
+  color: #fff;
+  font-size: 32px;
+  font-family: PingFang SC;
+  font-weight: bold;
+  line-height: 96px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  left: 0;
+  .all {
+    background: rgba(19, 199, 153, 1);
+  }
+  .wrong {
+    background: rgba(254, 117, 115, 1);
+  }
+  .btn {
+    flex: 1;
+    text-align: center;
+  }
+}

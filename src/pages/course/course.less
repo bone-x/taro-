@@ -1,0 +1,102 @@
+.bgGray {
+  background: #F6F8FC;
+}
+
+.adjust-pos {
+  position: relative;
+  height: 90px;
+  top: -160px;
+}
+
+.pure_top{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  &::after {
+    content: '';
+    width: 140%;
+    height: 200px;
+    position: absolute;
+    left: -20%;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    background: #13C799;
+  }
+}
+
+.img {
+  width: 40px;
+  height: 40px;
+}
+
+.flex {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  .flex-bottom {
+    overflow: hidden;
+    flex: 1;
+    ma
+
+    rgin-top: 30px;
+  }
+}
+
+.panel {
+  position: relative;
+  margin:0 30px 30px;
+  border-radius: 18px;
+  background: #fff;
+  .panel-top {
+    position: relative;
+    padding: 30px;
+    .prefix {
+      position: absolute;
+      top: 35px;
+      left: 0;
+      width: 10px;
+      height: 40px;
+      border-radius: 0 10px 10px 0;
+      background: #FEB219;
+    }
+    .block {
+      display: flex;
+      .block-left {
+        flex: 1;
+        line-height: 50px;
+        font-size: 34px;
+        font-weight: bold;
+        color: #3A3C42;
+        .stageName {
+          margin-right: 30px;
+        }
+        .timeMsg {
+          margin-top: 6px;
+          font-weight: normal;
+          font-size: 24px;
+          color: #6C7179;
+          .text {
+            margin-right: 20px;
+          }
+        }
+        .lock {
+          color: #A3ABB8;
+        }
+      }
+      .block-right {
+        .opt {
+          line-height: 66px;
+          font-size: 26px;
+          font-weight: bold;
+          color: #fff;
+          border-radius: 66px;
+          background: #13C799;
+        }
+        .mainColor {
+          background: #FEB219;
+        }
+      }
+    }
+  }
+}

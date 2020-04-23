@@ -1,0 +1,58 @@
+@mfColor: #3A3C42;
+.fontBold() {
+  font-weight: bold;
+}
+.navBox {
+  margin: 0 36px;
+  padding: 30px;
+  border-radius: 18px;
+  background-color: #fff;
+  box-shadow:0px 10px 30px rgba(6,83,174,0.05);
+  .nav-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .left {
+      font-size: 28px;
+      color: @mfColor;
+      .fontBold()
+    }
+    .right {
+      font-size: 28px;
+      .fontBold();
+      .img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+      .curProgress {
+        color: @mfColor;
+      }
+      .separator {
+        color: #EAEEF2;
+        margin: 0 10px;
+      }
+      .totalProgress {
+        color: #EAEEF2;
+      }
+    }
+  }
+  .navList {
+    display: flex;
+    margin-top: 30px;
+    .navItem {
+      flex: 1;
+      text-align: center;
+      .icon {
+        width: 60px;
+        height: 60px;
+      }
+      .name {
+        display: block;
+        font-size: 22px;
+        font-weight:bold;
+        color: @mfColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,191 @@
+.tab-box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  .tab-header {
+    position: relative;
+    display: flex;
+    height: 85px;
+    line-height: 85px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    color: #666;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    .tab-item {
+      flex: 1;
+      .name {
+        position: relative;
+        display: inline-block;
+        height: 100%;
+        z-index: 1;
+        font-weight: bold;
+        .tab-underline {
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 6px;
+          border-radius: 2px;
+          background-color: #13C799;
+          transform: scaleX(0);
+          transition: all 0.15s;
+          z-index: -1;
+        }
+      }
+    }
+    .tab-item__active .name{
+      color: #13C799;
+      cursor: pointer;
+      .tab-underline {
+        transform: scaleX(1);
+      }
+    }
+  }
+  .tab-panel {
+    position: absolute;
+    bottom: 0;
+    top: 86px;
+    overflow: hidden;
+    width: 100%;
+    .panel-active {
+      height: auto;
+    }
+    .panel-inactive {
+      overflow: hidden;
+      height: 0;
+    }
+  }
+}
+
+.fixBottom {
+  height: 106px;
+  .submitBox {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 106px;
+    padding: 20px 30px;
+    border-top: 1px solid #f5f5f5;
+    background: #fff;
+    box-sizing: border-box;
+    .conInput {
+      display: block;
+      flex: 1;
+      height: 60px;
+      line-height: 60px;
+      margin-right: 10px;
+      padding: 0 10px;
+      text-align: left;
+      font-size: 26px;
+      border: 1px solid #f5f5f5;
+      border-radius: 15px;
+      background: #ccc;
+    }
+    .submit {
+      width: 120px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 26px;
+      color: #fff;
+      background: #00AB84;
+    }
+  }
+}
+
+//聊天列表
+.chat-box {
+  padding-bottom: 40px;
+}
+
+.chat-box .chat {
+  margin: 24px 24px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.chat-box .chat-people{
+  position: absolute;
+  width:58px;
+  height:66px;
+  text-align: center;
+  display: table
+}
+
+.chat-box .chat-people.bg {
+  background: #FF009C;
+  opacity: 0.3;
+}
+
+.chat-box .chat-people image {
+  width: 56px;
+  height: 60px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.chat-box .desc {
+  margin: 15px 0 0 71px;
+}
+.chat-box .desc .pr {
+  display: inline-block;
+}
+.chat-box .desc .name-time-box {
+  font-size: 22px;
+}
+
+.chat-box .desc .name-time-box.color-1 {
+  color: #42BD55;
+}
+
+.chat-box .desc .name-time-box.color-2 {
+  color: #6C7179;
+}
+
+.chat-box .desc .name-time-box .time {
+  margin-left: 10px;
+}
+
+.chat-box .desc .arrow-p {
+  position: absolute;
+  left: -10px;
+  top: 4px;
+}
+
+.chat-box .desc .arrow-p image {
+  width: 15px;
+  height: 20px;
+}
+
+.chat-box .desc .chat-text {
+  margin: 15px 70px 0 0;
+  border-radius: 20px;
+  max-width: 320PX;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.chat-box .desc .chat-text.bg-1 {
+  color: #fff;
+  background: #42BD55;
+  border: 2px solid #42BD55;
+}
+
+.chat-box .desc .chat-text.bg-2 {
+  color: #666;
+  background: #fff;
+  border: 2px solid #EDEDED;
+}
+
+.chat-box .desc .chat-text .text {
+  line-height: 35px;
+  padding: 15px 20px;
+  font-size: 28px;
+  display: inline-block;
+}
+
